@@ -9,6 +9,7 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
+
     <Button
         android:id="@+id/button2"
         style="@style/Widget.AppCompat.Button.Colored"
@@ -16,8 +17,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:background="#F9B401"
-        android:fontFamily="sans-serif"
+        android:background="@drawable/borde_redondo"
+        android:fontFamily="@font/fugaz_one"
         android:text="Estadisticas"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#fff"
@@ -37,8 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:background="#F9B401"
-        android:fontFamily="sans-serif"
+        android:background="@drawable/borde_redondo"
+        android:fontFamily="@font/fugaz_one"
         android:text="Nueva Encuesta"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#fff"
