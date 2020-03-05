@@ -7,24 +7,17 @@
     android:background="#2C3D4F"
     tools:context=".Encuesta1">
 
-    <Button
-        android:id="@+id/btn_volver"
-        style="@style/Widget.AppCompat.Button.Colored"
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="284dp"
+        android:layout_marginEnd="340dp"
         android:background="@drawable/borde_redondo"
-        android:fontFamily="@font/fugaz_one"
-        android:text="X Cancelar"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#fff"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@mipmap/baseline_arrow_back_white_36" />
 
     <Button
         android:id="@+id/btn_3"
