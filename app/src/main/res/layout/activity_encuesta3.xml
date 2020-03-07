@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2C3D4F"
-    tools:context=".Encuesta1">
+    tools:context=".Encuesta3">
 
     <ImageView
         android:id="@+id/btn_volver"
@@ -94,6 +94,7 @@
         android:layout_marginRight="40dp"
         android:background="@drawable/borde_redondo"
         android:fontFamily="@font/fugaz_one"
+        android:onClick="pregunta4"
         android:text="A. Malo"
         android:textAlignment="viewStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"

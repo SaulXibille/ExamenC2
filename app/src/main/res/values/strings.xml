@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ExamenC2</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_ejemplo">ejemplo</string>
+    <string name="title_activity_encuesta_uno">encuesta_uno</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_encuestauno">Encuestauno</string>
 </resources>

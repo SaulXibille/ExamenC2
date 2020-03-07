@@ -101,6 +101,7 @@
         android:layout_marginRight="40dp"
         android:background="@drawable/borde_redondo"
         android:fontFamily="@font/fugaz_one"
+        android:onClick="pregunta2"
         android:text="A. 1 vez al mes"
         android:textAlignment="viewStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -129,4 +130,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.157" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
