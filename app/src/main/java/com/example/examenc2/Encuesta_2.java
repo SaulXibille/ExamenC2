@@ -8,15 +8,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Encuesta1 extends AppCompatActivity implements View.OnClickListener {
+public class Encuesta_2 extends AppCompatActivity implements View.OnClickListener {
 
     private Button btn_1, btn_2, btn_3, btn_4;
+    String respuesta1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_encuesta1);
+        setContentView(R.layout.activity_encuesta_2);
         getSupportActionBar().hide();
+
+        Bundle bundle = getIntent().getExtras();
+        respuesta1 = bundle.getString("respuesta_1");
+
+        Toast.makeText(this, respuesta1, Toast.LENGTH_SHORT).show();
 
         btn_1 = (Button)findViewById(R.id.btn_1);
         btn_2 = (Button)findViewById(R.id.btn_2);
@@ -31,20 +37,24 @@ public class Encuesta1 extends AppCompatActivity implements View.OnClickListener
     @Override
     public void onClick(View v) {
         if(v == btn_1) {
-            Intent ventana = new Intent(this, Encuesta_2.class);
-            ventana.putExtra("respuesta_1", "a");
+            Intent ventana = new Intent(this, Encuesta_3.class);
+            ventana.putExtra("respuesta_1", respuesta1);
+            ventana.putExtra("respuesta_2", "a");
             startActivity(ventana);
         }else if(v == btn_2) {
-            Intent ventana = new Intent(this, Encuesta_2.class);
-            ventana.putExtra("respuesta_1", "b");
+            Intent ventana = new Intent(this, Encuesta_3.class);
+            ventana.putExtra("respuesta_1", respuesta1);
+            ventana.putExtra("respuesta_2", "b");
             startActivity(ventana);
         } else if(v == btn_3) {
-            Intent ventana = new Intent(this, Encuesta_2.class);
-            ventana.putExtra("respuesta_1", "c");
+            Intent ventana = new Intent(this, Encuesta_3.class);
+            ventana.putExtra("respuesta_1", respuesta1);
+            ventana.putExtra("respuesta_2", "c");
             startActivity(ventana);
         } else if(v == btn_4) {
-            Intent ventana = new Intent(this, Encuesta_2.class);
-            ventana.putExtra("respuesta_1", "d");
+            Intent ventana = new Intent(this, Encuesta_3.class);
+            ventana.putExtra("respuesta_1", respuesta1);
+            ventana.putExtra("respuesta_2", "d");
             startActivity(ventana);
         }
     }

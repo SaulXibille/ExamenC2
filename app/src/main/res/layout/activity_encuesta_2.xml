@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2C3D4F"
-    tools:context=".Encuesta4">
+    tools:context=".Encuesta_2">
 
     <ImageView
         android:id="@+id/btn_volver"
@@ -15,6 +15,7 @@
         android:background="@drawable/borde_redondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@mipmap/baseline_arrow_back_white_36" />
@@ -94,7 +95,6 @@
         android:layout_marginRight="40dp"
         android:background="@drawable/borde_redondo"
         android:fontFamily="@font/fugaz_one"
-        android:onClick="pregunta5"
         android:text="A. Malo"
         android:textAlignment="viewStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -113,7 +113,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/fugaz_one"
-        android:text="4.- Califique el nivel de higiene en baños y salas."
+        android:text="2.-Califique la calidad de audio de las salas"
         android:textAlignment="center"
         android:textColor="#EEEEEE"
         android:textSize="30sp"
@@ -123,4 +123,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.157" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

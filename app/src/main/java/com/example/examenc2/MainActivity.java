@@ -19,4 +19,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(ventana);
     }
 
+    public void estadisticas(View view) {
+        Intent ventana = new Intent(this, Estadisticas.class);
+        startActivity(ventana);
+    }
+
 }

@@ -12,7 +12,7 @@ public class SQLiteOpen extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table resultados(id INTEGER PRIMARY KEY AUTOINCREMENT, preg_1 text, preg_2 text, preg_3 text, preg_4 text, preg_5 text)");
+        db.execSQL("create table respuestas(id INTEGER PRIMARY KEY AUTOINCREMENT, preg_1 text, preg_2 text, preg_3 text, preg_4 text, preg_5 text)");
     }
 
     @Override

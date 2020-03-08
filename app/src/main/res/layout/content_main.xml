@@ -19,6 +19,7 @@
         android:layout_marginRight="40dp"
         android:background="@drawable/borde_redondo"
         android:fontFamily="@font/fugaz_one"
+        android:onClick="estadisticas"
         android:text="Estadisticas"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#fff"
