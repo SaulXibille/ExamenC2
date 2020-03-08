@@ -21,7 +21,7 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
-public class Estadisticas extends AppCompatActivity {
+public class Estadisticas extends AppCompatActivity implements View.OnClickListener{
 
     PieChart pieChart1;
     PieChart pieChart2;
@@ -171,6 +171,14 @@ public class Estadisticas extends AppCompatActivity {
         grafica(entries5, pieChart5);
     }
 
+    @Override
+    public void onClick(View v) {
+        if (v == btn_volver) {
+            Intent ventana = new Intent(this, MainActivity.class);
+            startActivity(ventana);
+        }
+    }
+
     public void grafica(ArrayList<PieEntry> entries, PieChart pieChart){
         pieChart.getDescription().setEnabled(false);
         pieChart.setDragDecelerationFrictionCoef(2f);
@@ -199,10 +207,4 @@ public class Estadisticas extends AppCompatActivity {
         pieChart.animateXY(2800, 2800);
         pieChart.invalidate();
     }
-
-    public void onClick (View v) {
-            Intent ventana = new Intent(this, MainActivity.class);
-            startActivity(ventana);
-    }
-
 }
