@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class Encuesta1 extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btn_1, btn_2, btn_3, btn_4;
+    private Button btn_1, btn_2, btn_3, btn_4,btn_volver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +22,12 @@ public class Encuesta1 extends AppCompatActivity implements View.OnClickListener
         btn_2 = (Button)findViewById(R.id.btn_2);
         btn_3 = (Button)findViewById(R.id.btn_3);
         btn_4 = (Button)findViewById(R.id.btn_4);
+        btn_volver = (Button)findViewById(R.id.btn_volver);
         btn_1.setOnClickListener(this);
         btn_2.setOnClickListener(this);
         btn_3.setOnClickListener(this);
         btn_4.setOnClickListener(this);
+        btn_volver.setOnClickListener(this);
     }
 
     @Override
@@ -45,6 +47,10 @@ public class Encuesta1 extends AppCompatActivity implements View.OnClickListener
         } else if(v == btn_4) {
             Intent ventana = new Intent(this, Encuesta_2.class);
             ventana.putExtra("respuesta_1", "d");
+            startActivity(ventana);
+        } else if(v == btn_volver){
+            Intent ventana = new Intent(this, MainActivity.class);
+            ventana.putExtra("respuesta_1", "");
             startActivity(ventana);
         }
     }

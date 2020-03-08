@@ -2,10 +2,13 @@ package com.example.examenc2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.PieChart;
@@ -34,6 +37,8 @@ public class Estadisticas extends AppCompatActivity {
     float p5_a, p5_b, p5_c;
     int total;
 
+    private Button btn_volver;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +50,9 @@ public class Estadisticas extends AppCompatActivity {
         pieChart3 = (PieChart)findViewById(R.id.pieChart3);
         pieChart4 = (PieChart)findViewById(R.id.pieChart4);
         pieChart5 = (PieChart)findViewById(R.id.pieChart5);
+
+        btn_volver = (Button)findViewById(R.id.btn_volver);
+        btn_volver.setOnClickListener(this);
 
         try {
             final SQLiteOpen admin = new SQLiteOpen(this, "encuestas", null, 1);
@@ -191,4 +199,10 @@ public class Estadisticas extends AppCompatActivity {
         pieChart.animateXY(2800, 2800);
         pieChart.invalidate();
     }
+
+    public void onClick (View v) {
+            Intent ventana = new Intent(this, MainActivity.class);
+            startActivity(ventana);
+    }
+
 }

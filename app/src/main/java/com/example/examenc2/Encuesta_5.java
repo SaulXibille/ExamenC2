@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class Encuesta_5 extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btn_1, btn_2, btn_3;
+    private Button btn_1, btn_2, btn_3,btn_volver;
     String respuesta1;
     String respuesta2;
     String respuesta3;
@@ -38,9 +38,11 @@ public class Encuesta_5 extends AppCompatActivity implements View.OnClickListene
         btn_1 = (Button)findViewById(R.id.btn_1);
         btn_2 = (Button)findViewById(R.id.btn_2);
         btn_3 = (Button)findViewById(R.id.btn_3);
+        btn_volver = (Button)findViewById(R.id.btn_volver);
         btn_1.setOnClickListener(this);
         btn_2.setOnClickListener(this);
         btn_3.setOnClickListener(this);
+        btn_volver.setOnClickListener(this);
     }
 
     @Override
@@ -54,6 +56,9 @@ public class Encuesta_5 extends AppCompatActivity implements View.OnClickListene
         } else if(v == btn_3) {
             respuesta5 = "c";
             confirmar(v);
+        } else if(v == btn_volver){
+            Intent ventana = new Intent(this, Encuesta_4.class);
+            startActivity(ventana);
         }
     }
 
