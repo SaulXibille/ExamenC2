@@ -25,15 +25,327 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pregunta 1"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="1.-¿Con que frecuencia acudes al cine?"
                 android:textAlignment="center"
-                android:textSize="30sp" />
+                android:textColor="#EEEEEE"
+                android:textSize="26sp" />
 
             <com.github.mikephil.charting.charts.PieChart
                 android:id="@+id/pieChart"
-                android:layout_width="381dp"
-                android:layout_height="263dp"
-                android:layout_margin="20dp" />
+                android:layout_width="382dp"
+                android:layout_height="375dp"
+                android:layout_margin="14dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="A. 1 vez al mes"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="B. 1 vez cada semana"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="C. Mas de una vez a la semana"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="D. Casi nunca"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+                                            <!-- PREGUNTA DOS-->
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#F9B401" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="2.- Califique la calidad de audio de las salas"
+                android:textAlignment="center"
+                android:textColor="#EEEEEE"
+                android:textSize="26sp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart2"
+                android:layout_width="382dp"
+                android:layout_height="375dp"
+                android:layout_margin="14dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="A. Malo"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="B. Regular"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="C. Bueno"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="D. Excelente"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+                                            <!-- PREGUNTA TRES-->
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#F9B401" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="3.- Califique la atención del personal antes, durante y despues de la función"
+                android:textAlignment="center"
+                android:textColor="#EEEEEE"
+                android:textSize="26sp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart3"
+                android:layout_width="382dp"
+                android:layout_height="375dp"
+                android:layout_margin="14dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="A. Malo"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="B. Regular"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="C. Bueno"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="D. Excelente"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+                                        <!-- PREGUNTA CUATRO-->
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#F9B401" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="4.- Califique el nivel de higiene en los baños y salas."
+                android:textAlignment="center"
+                android:textColor="#EEEEEE"
+                android:textSize="26sp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart4"
+                android:layout_width="382dp"
+                android:layout_height="375dp"
+                android:layout_margin="14dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="A. Malo"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="B. Regular"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="C. Bueno"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="D. Excelente"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <!-- PREGUNTA CINCO-->
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#F9B401" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="5.- ¿Que tipo de sala prefiere?"
+                android:textAlignment="center"
+                android:textColor="#EEEEEE"
+                android:textSize="26sp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart5"
+                android:layout_width="382dp"
+                android:layout_height="375dp"
+                android:layout_margin="14dp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="A. 3D"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="B. Sala normal"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/fugaz_one"
+                android:text="C. Macro XE"
+                android:textColor="#EEEEEE"
+                android:textSize="22sp" />
 
 
         </LinearLayout>
