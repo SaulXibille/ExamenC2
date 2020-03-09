@@ -174,6 +174,7 @@ public class Estadisticas extends AppCompatActivity {
         pieChart.setDrawHoleEnabled(true);
         pieChart.setTransparentCircleRadius(30f);
         pieChart.setHoleRadius(25f);
+//        pieChart.setUsePercentValues(true);
 
         PieDataSet pieDataSet = new PieDataSet(entries,"");
         pieDataSet.setSelectionShift(3.5f);
@@ -186,11 +187,10 @@ public class Estadisticas extends AppCompatActivity {
         PieData pieData = new PieData(pieDataSet);
         pieData.setValueTextSize(17f);
         pieData.setValueTextColor(Color.WHITE);
-        pieData.setValueFormatter(new PercentFormatter());
+        pieData.setValueFormatter(new PercentFormatter(pieChart));
 
         pieChart.setData(pieData);
         pieChart.setUsePercentValues(true);
-
         pieChart.setHoleColor(Color.parseColor("#2C3D4F"));
         pieChart.animateXY(2000, 2000);
         pieChart.invalidate();
