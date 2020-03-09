@@ -50,7 +50,6 @@ public class Encuesta1 extends AppCompatActivity implements View.OnClickListener
             startActivity(ventana);
         } else if(v == btn_volver){
             Intent ventana = new Intent(this, MainActivity.class);
-            ventana.putExtra("respuesta_1", "");
             startActivity(ventana);
         }
     }

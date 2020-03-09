@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class Encuesta_3 extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btn_1, btn_2, btn_3, btn_4,btn_volver;
+    private Button btn_1, btn_2, btn_3, btn_4;
     String respuesta1;
     String respuesta2;
 
@@ -24,18 +24,16 @@ public class Encuesta_3 extends AppCompatActivity implements View.OnClickListene
         respuesta1 = bundle.getString("respuesta_1");
         respuesta2 = bundle.getString("respuesta_2");
 
-        Toast.makeText(this, respuesta1, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, respuesta1, Toast.LENGTH_SHORT).show();
 
         btn_1 = (Button)findViewById(R.id.btn_1);
         btn_2 = (Button)findViewById(R.id.btn_2);
         btn_3 = (Button)findViewById(R.id.btn_3);
         btn_4 = (Button)findViewById(R.id.btn_4);
-        btn_volver = (Button)findViewById(R.id.btn_volver);
         btn_1.setOnClickListener(this);
         btn_2.setOnClickListener(this);
         btn_3.setOnClickListener(this);
         btn_4.setOnClickListener(this);
-        btn_volver.setOnClickListener(this);
     }
 
     @Override
@@ -64,9 +62,15 @@ public class Encuesta_3 extends AppCompatActivity implements View.OnClickListene
             ventana.putExtra("respuesta_2", respuesta2);
             ventana.putExtra("respuesta_3", "d");
             startActivity(ventana);
-        }else if(v == btn_volver){
-            Intent ventana = new Intent(this, Encuesta_2.class);
-            startActivity(ventana);
         }
     }
+
+//    public void regresar(View view) {
+//        try {
+//            Intent ventana = new Intent(this, Encuesta1.class);
+//            startActivity(ventana);
+//        }catch (Exception e) {
+//            Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+//        }
+//    }
 }

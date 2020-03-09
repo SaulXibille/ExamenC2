@@ -7,20 +7,19 @@
     android:background="#2C3D4F"
     tools:context=".Encuesta_2">
 
-    <ImageView
-        android:id="@+id/btn_volver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="340dp"
-        android:background="@drawable/borde_redondo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@mipmap/baseline_arrow_back_white_36" />
+<!--    <ImageView-->
+<!--        android:id="@+id/btn_volver"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/borde_redondo"-->
+<!--        android:onClick="regresar"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.044"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.023"-->
+<!--        app:srcCompat="@mipmap/baseline_arrow_back_white_36" />-->
 
     <Button
         android:id="@+id/btn_4"

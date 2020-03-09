@@ -21,7 +21,7 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
-public class Estadisticas extends AppCompatActivity implements View.OnClickListener{
+public class Estadisticas extends AppCompatActivity {
 
     PieChart pieChart1;
     PieChart pieChart2;
@@ -37,8 +37,6 @@ public class Estadisticas extends AppCompatActivity implements View.OnClickListe
     float p5_a, p5_b, p5_c;
     int total;
 
-    private Button btn_volver;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,9 +48,6 @@ public class Estadisticas extends AppCompatActivity implements View.OnClickListe
         pieChart3 = (PieChart)findViewById(R.id.pieChart3);
         pieChart4 = (PieChart)findViewById(R.id.pieChart4);
         pieChart5 = (PieChart)findViewById(R.id.pieChart5);
-
-        btn_volver = (Button)findViewById(R.id.btn_volver);
-        btn_volver.setOnClickListener(this);
 
         try {
             final SQLiteOpen admin = new SQLiteOpen(this, "encuestas", null, 1);
@@ -171,15 +166,8 @@ public class Estadisticas extends AppCompatActivity implements View.OnClickListe
         grafica(entries5, pieChart5);
     }
 
-    @Override
-    public void onClick(View v) {
-        if (v == btn_volver) {
-            Intent ventana = new Intent(this, MainActivity.class);
-            startActivity(ventana);
-        }
-    }
+    public void grafica(ArrayList<PieEntry> entries, PieChart pieChart) {
 
-    public void grafica(ArrayList<PieEntry> entries, PieChart pieChart){
         pieChart.getDescription().setEnabled(false);
         pieChart.setDragDecelerationFrictionCoef(2f);
         pieChart.setHoleColor(Color.WHITE);
@@ -204,7 +192,12 @@ public class Estadisticas extends AppCompatActivity implements View.OnClickListe
         pieChart.setUsePercentValues(true);
 
         pieChart.setHoleColor(Color.parseColor("#2C3D4F"));
-        pieChart.animateXY(2800, 2800);
+        pieChart.animateXY(2000, 2000);
         pieChart.invalidate();
+    }
+
+    public void regresar(View view) {
+        Intent ventana = new Intent(this, MainActivity.class);
+        startActivity(ventana);
     }
 }
